@@ -11,20 +11,20 @@ import org.testng.annotations.Test;
 import POMPages.search;
 import Scenario.Loginmethod;
 import Scenario.SearchMethod;
-import baseclass.CommonAction;
+import baseclass.BaseClass;
 
-public class AmazonTest {
+public class TestCase {
 
 	WebDriver driver;
 	Loginmethod Lm ;
-	CommonAction ca;
+	BaseClass ca;
 	search ss;
 	SearchMethod si;
 		
 	@BeforeSuite
 	public void browser()
 	{
-		ca=new CommonAction();
+		ca=new BaseClass();
 		ca.launchbrowser();
 		Lm=new Loginmethod();
 		ss= new search();
@@ -32,9 +32,11 @@ public class AmazonTest {
 	}
 	
 	@Test(priority=0)
-	public void Loginfunction() throws FileNotFoundException, IOException, InterruptedException
+	public void Loginfunction() throws Throwable
 	{
 		Lm.Login();
+		
+		
 		
 	}
 	@Test(priority=1)

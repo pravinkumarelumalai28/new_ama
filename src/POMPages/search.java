@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import baseclass.CommonAction;
+import baseclass.BaseClass;
 
-public class search extends CommonAction{
+public class search extends BaseClass{
 
 	public search()
 	{
@@ -26,6 +26,9 @@ public class search extends CommonAction{
 
 	@FindBy(xpath="//div[@id='nav-search-dropdown-card']//select")
 	private WebElement drpValue;
+	
+	@FindBy(xpath="//div[@class='nav-fill']//select//option[8]")
+	private WebElement item;
 
 	
 
@@ -40,15 +43,16 @@ public class search extends CommonAction{
 	}
 
 	public void searchByDrpValue() throws InterruptedException{		
-		try{			
+		try{
+			click(drpValue);
+			
 			selectFromDrpValue(drpValue, getproperty("select"));
 			click(search);				
 		}catch (Exception e) {
-			e.getMessage();
+			
 		}
 		Thread.sleep(3000);
 	}
-
 	
 
 }

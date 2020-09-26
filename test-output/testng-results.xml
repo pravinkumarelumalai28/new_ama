@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8225" started-at="2020-09-26T09:00:32Z" finished-at="2020-09-26T09:00:40Z">
+  <suite name="Default suite" duration-ms="21621" started-at="2020-09-26T11:14:34Z" finished-at="2020-09-26T11:14:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8225" started-at="2020-09-26T09:00:32Z" finished-at="2020-09-26T09:00:40Z">
-      <class name="TestCase.AmazonTest">
-        <test-method status="PASS" signature="browser()[pri:0, instance:TestCase.AmazonTest@4520ebad]" name="browser" is-config="true" duration-ms="11699" started-at="2020-09-26T09:00:20Z" finished-at="2020-09-26T09:00:32Z">
+    <test name="Default test" duration-ms="21621" started-at="2020-09-26T11:14:34Z" finished-at="2020-09-26T11:14:56Z">
+      <class name="TestCase.TestCase">
+        <test-method status="PASS" signature="browser()[pri:0, instance:TestCase.TestCase@4520ebad]" name="browser" is-config="true" duration-ms="11337" started-at="2020-09-26T11:14:23Z" finished-at="2020-09-26T11:14:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="Loginfunction()[pri:0, instance:TestCase.AmazonTest@4520ebad]" name="Loginfunction" duration-ms="3526" started-at="2020-09-26T09:00:32Z" finished-at="2020-09-26T09:00:36Z">
+        <test-method status="PASS" signature="Loginfunction()[pri:0, instance:TestCase.TestCase@4520ebad]" name="Loginfunction" duration-ms="5926" started-at="2020-09-26T11:14:34Z" finished-at="2020-09-26T11:14:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginfunction -->
-        <test-method status="PASS" signature="searchfunction()[pri:1, instance:TestCase.AmazonTest@4520ebad]" name="searchfunction" duration-ms="4643" started-at="2020-09-26T09:00:36Z" finished-at="2020-09-26T09:00:40Z">
+        <test-method status="PASS" signature="searchfunction()[pri:1, instance:TestCase.TestCase@4520ebad]" name="searchfunction" duration-ms="15656" started-at="2020-09-26T11:14:40Z" finished-at="2020-09-26T11:14:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchfunction -->
-      </class> <!-- TestCase.AmazonTest -->
+      </class> <!-- TestCase.TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

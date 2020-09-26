@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import baseclass.CommonAction;
+import baseclass.BaseClass;
 
-public class LoginPage extends CommonAction {
+public class LoginPage extends BaseClass {
 	public LoginPage()
 	{
 	PageFactory.initElements(driver, this);
@@ -32,7 +32,7 @@ public class LoginPage extends CommonAction {
 
 	
 	
-	public void signinaction() {
+	public void singninicon() {
 		click(signin);
 	}
 

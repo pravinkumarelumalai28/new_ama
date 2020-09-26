@@ -17,7 +17,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-public class CommonAction{
+public class BaseClass{
 
 	public static WebDriver driver;
 
@@ -26,7 +26,7 @@ public class CommonAction{
 	public void launchbrowser()
 	{
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-		CommonAction.driver = new ChromeDriver();
+		BaseClass.driver = new ChromeDriver();
 
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
